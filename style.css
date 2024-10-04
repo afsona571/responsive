@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.container {
+    max-width: 1400px;
+    width: 90%;
+    margin: auto;
+}
+
+.div_box {
+    max-width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    transition: 0.5s;
+    border: 3px solid #000;
+}
+
+@media(min-width : 923px ) and (max-width: 1245px){
+    .box{
+        background-color: blue;
+    }
+    
+} 
+@media(min-width : 600px ) and (max-width: 922px){
+    .box{
+        background-color: green;
+        border: 3px solid blueviolet;
+    }
+    
+} 
+@media(max-width : 600px ){
+    .box{
+        background-color: yellow;
+        border: 3px solid forestgreen;
+        
+    }
+    
+} 
